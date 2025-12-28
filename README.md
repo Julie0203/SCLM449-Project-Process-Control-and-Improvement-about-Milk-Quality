@@ -29,10 +29,10 @@ Milk quality indicators vary across samples, which may cause unstable production
 Python (Pandas, NumPy, Scikit-learn, Matplotlib), Jupyter Notebook, SPC, DMAIC, Cp/Cpk
 
 ## Key Results
-- Process stability: [in-control / out-of-control] based on X-bar/R chart
-- Capability: Cp = __ , Cpk = __
-- Model performance: Accuracy = __ , F1-score = __
-- Key drivers: [Top 3 important features]
+- **Process stability:** **Out-of-control** based on X-bar/R charts. Subgroup means frequently exceed the **Upper Control Limit (UCL)**, indicating high instability and **special-cause variation** in pasteurization temperatures.
+- **Capability:** **Cp = 0.066**, **Cpk = -0.073**. Process variation is far wider than the allowable tolerance, and the process mean lies **outside the specification limits** (biased above **USL**).
+- **Model performance:** **Accuracy = 99.06%**, **F1-score = 0.9906 (Weighted Average)**. The model correctly classified **210/212** test samples with near-perfect performance for the **Medium-quality** class.
+- **Key drivers:** **pH** (Primary Splitter/Root Node), **Temperature** (Secondary major split), and **Odor/Fat/Turbidity** (Key sensory refiners).
 
 ## Business Impact
 - Enables early detection of process drift to reduce defective batches
@@ -40,15 +40,20 @@ Python (Pandas, NumPy, Scikit-learn, Matplotlib), Jupyter Notebook, SPC, DMAIC, 
 - Supports consistent grading decisions using a predictive model
 
 ## Repository Structure
-- `Milk Project (clean version).ipynb` – Final notebook
-- `milknew.csv` – Dataset
-- `SCLM_449_FINAL_PROJECT_....pdf` – Report
-- `SCLM 449 Milk Company Quality Presentation...` – Slides
+- `Milk Project (clean version).ipynb` – Final notebook  
+- `milknew.csv` – Dataset  
+- `SCLM_449_FINAL_PROJECT_....pdf` – Report  
+- `SCLM 449 Milk Company Quality Presentation...` – Slides  
 
 ## How to Run
 1. Open `Milk Project (clean version).ipynb`
-2. Install required libraries (Pandas, NumPy, Scikit-learn, Matplotlib)
+2. Install required libraries:
+   - Pandas
+   - NumPy
+   - Scikit-learn
+   - Matplotlib
 3. Run all cells
 
 ## Author
 Huynh Thuy Bao Tram – SCLM449 (Process Control & Improvement)
+
